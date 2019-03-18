@@ -7,8 +7,15 @@ footer {
 
 
 /* BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-
+/* body {
+    margin: 2.5%;
+} */
 
 /* LAYOUT */
 
@@ -64,8 +71,16 @@ footer {
 @media screen and (max-width: 39.9375em) {
     /* styles for small only */
 
+    body {
+        margin: 4% 5%
+    }
+
     .show {
         display:block !important;
+    }
+
+    .page-header {
+        margin-bottom: 2.5em;
     }
 
     .main-menu ul{
@@ -96,30 +111,49 @@ footer {
         display: none;
     }
 
-    .home-intro,
+    .home-intro {
+        text-align: center;
+        margin-bottom: 4em;
+    }
+
     .services-header {
         text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .services-header h2 {
+        /* margin-bottom:; */
     }
 
     .service {
         display: grid;
         grid-template-columns: 0.25fr 1fr;
+        grid-column-gap: 1em;
         grid-template-rows: auto;
         grid-template-areas: 
         "img h3"
-        "img p"
+        "img p";
+
+        margin-bottom: 2em;
     }
 
     .service img {
         grid-area: img;
+
+        width: 100%;
+        height: auto;
     }
 
     .service h3 {
         grid-area: h3;
+
+        margin: 0 0 0.5em 0;
     }
 
     .service p {
         grid-area: p;
+        
+        margin: 0;
     }
 }
 
