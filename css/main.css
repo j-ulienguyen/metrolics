@@ -2,7 +2,7 @@ div,
 section,
 header,
 footer {
-    /*outline: 1px solid #ccc;*/
+    outline: 1px solid #ccc;
 }
 
 
@@ -13,7 +13,7 @@ footer {
 /* LAYOUT */
 
 @media screen and (min-width: 40em) {
-
+    /* Medium and up */
 }
 
 
@@ -79,7 +79,7 @@ footer {
         right: 15px;
         width: 38px;
         height: 38px;
-        background-color: #e2e2e2;
+        background-color: #078ecc;
         padding: 3px;
         border-radius: 3px;
         border: 1px solid #ccc;
@@ -92,7 +92,35 @@ footer {
         justify-content: flex-start;
     }
 
+    .hero-area {
+        display: none;
+    }
 
+    .home-intro,
+    .services-header {
+        text-align: center;
+    }
+
+    .service {
+        display: grid;
+        grid-template-columns: 0.25fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "img h3"
+        "img p"
+    }
+
+    .service img {
+        grid-area: img;
+    }
+
+    .service h3 {
+        grid-area: h3;
+    }
+
+    .service p {
+        grid-area: p;
+    }
 }
 
 
