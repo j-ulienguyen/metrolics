@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+
 div,
 section,
 header,
@@ -13,9 +16,14 @@ footer {
     box-sizing: border-box;
 }
 
-/* body {
-    margin: 2.5%;
-} */
+body {
+    /* margin: 2.5%; */
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home-mark {
+    color: lightskyblue;
+}
 
 /* LAYOUT */
 
@@ -72,7 +80,7 @@ footer {
     /* styles for small only */
 
     body {
-        margin: 4% 5%
+        margin: 4% 5%;
     }
 
     .show {
