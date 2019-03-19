@@ -118,12 +118,30 @@ body {
     color: #4fbbff;
 }
 
+.slider-info__heading {
+    font-size: 1.25em;
+    color: rgb(99, 98, 98);
+    text-decoration: none;
+
+    padding: 0.5em;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(228, 228, 228);
+}
+
+
 /****************************************** 
                    LAYOUT
 ******************************************/
 .hero-area {
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+
+    /* background-color: lightcoral; */
     background-color: #ebebeb;
 }
+
 
 .page-footer {
     background-color: #16242f;
@@ -353,6 +371,23 @@ body {
     background-color: rgb(0, 108, 196);
 }
 
+.border-left {
+    border-left: 5px solid;
+    border-bottom: none; 
+}
+
+.border-left--blue {
+    border-left-color: rgb(5, 142, 255);
+}
+
+.border-left--red {
+    border-left-color: rgb(255, 96, 96);
+}
+
+.border-left--yellow {
+    border-left-color: rgb(252, 217, 18);
+}
+
 .CEO-info__heading {
     margin-bottom: 0.5em;
 }
@@ -395,7 +430,6 @@ body {
 
 @media screen and (max-width: 39.9375em) {
     /* styles for small only */
-
     .wrapper {
         margin: 4% 5%;
     }
@@ -453,8 +487,13 @@ body {
 
 @media screen and (min-width: 40em) {
     /* styles for medium and onward */
+    .wrapper {
+        /* margin: 0 3%; */
+    }
+
+
     .main-menu li {
-        padding: 2rem;
+        padding: 1.5rem;
     }
 
     .main-menu i {
@@ -464,7 +503,29 @@ body {
 
     .icon-label {
         display: block;
+    }
 
+    .slider {
+        /* display: flex; */
+        /* justify-content: center; */
+        width: 90%;
+
+        position: relative;
+    }
+
+    .slide-img {
+        width: 100%;
+    }
+
+    .slider-info {
+        position: absolute;
+        top: 25%;
+        left: 15%;
+    }
+
+    .home-intro {
+        margin: 4em auto;
+        max-width: 80%;
     }
 }
 
@@ -474,7 +535,6 @@ body {
     .main-menu ul {
         flex-direction: row;
         justify-content: center;
-
     }
 
 }
