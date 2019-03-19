@@ -86,12 +86,15 @@ body {
 }
 
 .CEO-info__heading {
+    font-size: 1em;
     font-weight: 500;
 }
 
 .CEO-info__description {
+    font-size: 0.75em;
     font-weight: 300;
     font-style: italic;
+    line-height: 1.25;
 }
 
 /* LAYOUT */
@@ -188,10 +191,12 @@ body {
     text-decoration: none;
 }
 
+
+
 @media screen and (max-width: 39.9375em) {
     /* styles for small only */
 
-    body {
+    .wrapper {
         margin: 4% 5%;
     }
 
@@ -282,18 +287,58 @@ body {
         margin-bottom: 4em;
     }
 
+    .blog__entry,
+    .project {
+        margin-bottom: 1.5em;
+        border: 1px solid black;
+    }
+
     .other-info,
     .clients,
-    .about-us,
+    .about,
     .instagram,
     .newsletter {
         display: none;
     }
 
-    .blog__entry,
-    .project {
-        margin-bottom: 1.5em;
-        border: 1px solid black;
+    .page-footer {
+        padding: 4% 5%;
+    }
+
+    .CEO-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1em;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "img name"
+        "img info";
+
+        margin: 1em 0 2em 0;
+    }
+
+    .CEO-info__heading {
+        grid-area: name;
+    }
+
+    .CEO-info__description {
+        grid-area: info;
+    }
+
+    .CEO-info__image {
+        grid-area: img;
+
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .social-nav__container {
+        display: flex;
+    }
+
+    .social-nav {
+        margin: 0 auto;
     }
 }
 
