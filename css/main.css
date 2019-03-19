@@ -55,16 +55,30 @@ body {
 
 .post__heading {
     font-size: 1.35em;
-    float: left;
     font-weight: 500;
-    margin-top: 0.5em;
+    color: white;
+
+    float: left;
+    margin-top: 0.6em;
 }
 
 .post__subheading {
     font-size: 1em;
+    font-weight: 400;
+    color: white;
+
     float: left;
     clear: left;
+}
+
+.time-box {
+    font-size: 0.75em;
     font-weight: 400;
+    color: white;
+}
+
+.day--big {
+    font-size: 1.75em;
 }
 
 .page-footer--white {
@@ -111,17 +125,14 @@ body {
     /* height: auto; */
     width: 90%;
     margin: 0 auto;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
 }
 
 .blog__entry,
 .project {
     display: flex;
     flex-direction: column;
-}
-
-.blog__entry {
-    position: fixed;
+    background-color: rgb(56, 187, 231);
 }
 
 .post__image {
@@ -134,12 +145,24 @@ body {
     bottom: 20px;
 }
 
+.blog__entry {
+    position: relative;
+}
+
 .time-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     width: 75px;
     height: 60px;
-    position: fixed;
-    top: 50px;
+
+    position: absolute;
+    top: 0;
     left: 0;
+
+    text-align: center;
     background-color: lightcoral;
 }
 
