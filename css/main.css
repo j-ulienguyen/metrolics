@@ -251,10 +251,14 @@ hr {
     }
 
     .section__header {
-        margin-bottom: 2.5em;
+        margin-bottom: 1em;
     }
 
     .services {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1.5em;
+
         margin-bottom: 4em;
     }
 
@@ -266,8 +270,6 @@ hr {
         grid-template-areas: 
         "img h3"
         "img p";
-
-        margin-bottom: 2em;
     }
 
     .service img {
@@ -288,17 +290,19 @@ hr {
     }
 
     .blog {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+
         margin-bottom: 2.5em;
     }
 
     .projects {
-        margin-bottom: 4em;
-    }
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
 
-    .blog__entry,
-    .project {
-        margin-bottom: 1.5em;
-        /* border: 1px solid black; */
+        margin-bottom: 2.5em;
     }
 
     .other-info,
