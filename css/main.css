@@ -85,7 +85,8 @@ body {
     color: white;
 }
 
-.CEO-info__heading {
+.CEO-info__heading,
+.tweets__heading {
     font-size: 1em;
     font-weight: 500;
 }
@@ -306,35 +307,41 @@ body {
     }
 
     .CEO-info {
-        display: grid;
+        /* display: grid;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 1em;
         grid-template-rows: auto;
         grid-template-areas: 
         "img name"
-        "img info";
+        "img info"; */
 
-        margin: 1em 0 2em 0;
+        margin: 1em 0 4em 0;
     }
 
     .CEO-info__heading {
-        grid-area: name;
+        /* grid-area: name; */
+        margin-bottom: 0.5em;
     }
 
     .CEO-info__description {
-        grid-area: info;
+        /* grid-area: info; */
     }
 
     .CEO-info__image {
-        grid-area: img;
+        /* grid-area: img; */
 
-        width: 100%;
-        height: auto;
+        /* width: 100%;
+        height: auto; */
         border-radius: 50%;
+
+        float: left;
+        width: 40%;
+        margin-right: 1.5em;
     }
 
     .social-nav__container {
         display: flex;
+        margin-bottom: 2em;
     }
 
     .social-nav {
