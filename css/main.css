@@ -8,8 +8,9 @@ footer {
     /* outline: 1px solid #ccc; */
 }
 
-
-/* BASE */
+/****************************************** 
+                    BASE
+******************************************/
 * {
     margin: 0;
     padding: 0;
@@ -17,12 +18,13 @@ footer {
 }
 
 body {
-    /* margin: 2.5%; */
     font-family: 'Ubuntu', sans-serif;
 }
 
 
-/* TYPOGRAPHY */
+/****************************************** 
+                TYPOGRAPHY
+******************************************/
 .main-heading {
     font-weight: 400;
     text-align: center;
@@ -54,17 +56,17 @@ body {
 }
 
 .post__heading {
-    font-size: 1.35em;
-    font-weight: 500;
+    font-size: 1.25em;
+    font-weight: 400;
     color: white;
 
     float: left;
-    margin-top: 0.6em;
+    margin-top: 0.7em;
 }
 
 .post__subheading {
-    font-size: 1em;
-    font-weight: 400;
+    font-size: 0.85em;
+    font-weight: 300;
     color: white;
 
     float: left;
@@ -98,14 +100,9 @@ body {
     line-height: 1.25;
 }
 
-/* LAYOUT */
-
-@media screen and (min-width: 40em) {
-    /* Medium and up */
-}
-
-
-
+/****************************************** 
+                   LAYOUT
+******************************************/
 .hero-area {
     background-color: #ebebeb;
 }
@@ -121,37 +118,30 @@ body {
 
 }
 
-/* MODULES */
-.section-line {
-    display: inline-block;
-    margin-bottom: 2em;
-    border: 0.5px solid;
-}
-
-.section-line--blue {
-    width: 25%;
-    border-color: rgb(88, 213, 255);
-}
-
-.section-line--gray {
-    width: 74%;
-    border-color: rgb(230, 230, 230);
-}
-
-.post {
-    /* width: 300px; */
-    /* height: 255px; */
-    /* max-width: 300px; */
-    /* height: auto; */
-    width: 90%;
-    margin: 0 auto;
-    /* background-color: lightcoral; */
+/****************************************** 
+                  MODULES
+******************************************/
+hr {
+    margin-bottom: 2.5em;
 }
 
 .blog__entry,
 .project {
     display: flex;
     flex-direction: column;
+
+    position: relative;
+}
+
+.post {
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+
+    margin: 0 auto;
+    padding: 0 5%;
     background-color: rgb(56, 187, 231);
 }
 
@@ -209,6 +199,9 @@ body {
 }
 
 
+/****************************************** 
+                MEDIA QUERIES
+******************************************/
 
 @media screen and (max-width: 39.9375em) {
     /* styles for small only */
@@ -257,12 +250,12 @@ body {
         margin-bottom: 4em;
     }
 
-    .services {
-        margin-bottom: 4em;
-    }
-
     .section__header {
         margin-bottom: 2.5em;
+    }
+
+    .services {
+        margin-bottom: 4em;
     }
 
     .service {
@@ -286,18 +279,16 @@ body {
 
     .service-heading {
         grid-area: h3;
-
-        margin: 0 0 0.5em 0;
+        margin-bottom: 0.5em;
     }
 
     .service-description {
         grid-area: p;
-        
         margin: 0;
     }
 
     .blog {
-        margin-bottom: 4em;
+        margin-bottom: 2.5em;
     }
 
     .projects {
@@ -381,11 +372,6 @@ body {
         display: block;
 
     }
-}
-
-
-@media screen and (max-width: 39.9375em) {
-    /* styles for small and medium*/
 }
 
 
