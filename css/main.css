@@ -122,6 +122,22 @@ body {
 }
 
 /* MODULES */
+.section-line {
+    display: inline-block;
+    margin-bottom: 2em;
+    border: 0.5px solid;
+}
+
+.section-line--blue {
+    width: 25%;
+    border-color: rgb(88, 213, 255);
+}
+
+.section-line--gray {
+    width: 74%;
+    border-color: rgb(230, 230, 230);
+}
+
 .post {
     /* width: 300px; */
     /* height: 255px; */
@@ -291,7 +307,7 @@ body {
     .blog__entry,
     .project {
         margin-bottom: 1.5em;
-        border: 1px solid black;
+        /* border: 1px solid black; */
     }
 
     .other-info,
