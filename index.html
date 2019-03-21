@@ -241,6 +241,7 @@
             <div class="accordions">
                 <div class="accordions__menu accordions__menu--active">
                     <h2 class="accordion__heading--active">Sample Accordion Menu</h2>
+                    <div class="expand-btn expand-btn--active">+</div>
                 </div>
                 <dl>
                     <img src="img/theme/solution-img.png" alt="Lightbulb" class="accordion__icon">
@@ -249,16 +250,18 @@
                 </dl>
                 <div class="accordions__menu">
                     <h2 class="accordion__heading">Sample Accordion Menu 2</h2>
+                    <div class="expand-btn">+</div>
                 </div>
-                <dl>
+                <dl class="hide">
                     <img src="img/theme/solution-img.png" alt="Lightbulb" class="accordion__icon">
                     <dt class="feature__heading">Feature 2</dt>
                     <dd class="feature__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta in quas, odio recusandae molestiae laudantium delectus dolorem nulla amet adipisci assumenda consectetur tempore similique iste hic repudiandae sunt sint consequuntur!</dd>
                 </dl>
                 <div class="accordions__menu">
                     <h2 class="accordion__heading">Sample Accordion Menu 3</h2>
+                    <div class="expand-btn">+</div>
                 </div>
-                <dl>
+                <dl class="hide">
                     <img src="img/theme/solution-img.png" alt="Lightbulb" class="accordion__icon">
                     <dt class="feature__heading">Feature 3</dt>
                     <dd class="feature__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit placeat, nostrum fugit ipsam enim dolores sint ratione animi reiciendis nulla provident aperiam error, dicta sunt illo. Tempore ullam fuga beatae.</dd>
@@ -267,33 +270,78 @@
 
             <div class="info-tabs">
                 <ul class="tab">
-                    <li><a href="#" class="tab-links" onclick="openCity(event, 'London')">Tab1</a></li>
-                    <li><a href="#" class="tab-links" onclick="openCity(event, 'Paris')">Tab2</a></li>
-                    <li><a href="#" class="tab-links" onclick="openCity(event, 'Tokyo')">Tab3</a></li>
+                    <li class="tab__item">
+                        <a href="#" class="tab-links" onclick="openCity(event, 'London')">Tab1</a>
+                    </li>
+                    <li class="tab__item">
+                        <a href="#" class="tab-links" onclick="openCity(event, 'Paris')">Tab2</a>
+                    </li>
+                    <li class="tab__item">
+                        <a href="#" class="tab-links" onclick="openCity(event, 'Tokyo')">Tab3</a>
+                    </li>
                 </ul>
                 <div id="tab1" class="tab-content">
-                    <img src="img/icon.png" alt="icon" />
+                    <div class="tab-content__box">
+                        <img src="img/theme/design-img.png" class="tab-content__icon" alt="icon" />
+                        <p>
+                            We are a fairly small, flexible design studio that designs for
+                            print and web. We work flexibly with clients to fulfil their design needs.
+                            Whether you need to create a brand from scratch, including marketing
+                            materials.
+                        </p>
+                    </div>
+                    <div class="tab-content__box">
+                        <img src="img/theme/design-img.png" class="tab-content__icon"  alt="icon" />
+                        <p>
+                            We are a fairly small, flexible design studio that designs for
+                            print and web. We work flexibly with clients to fulfil their design needs.
+                            Whether you need to create a brand from scratch, including marketing
+                            materials.
+                        </p>
+                    </div>
+                    <div class="tab-content__box">
+                        <img src="img/theme/design-img.png" class="tab-content__icon"  alt="icon" />
+                        <p>
+                            We are a fairly small, flexible design studio that designs for
+                            print and web. We work flexibly with clients to fulfil their design needs.
+                            Whether you need to create a brand from scratch, including marketing
+                            materials.
+                        </p>
+                    </div>
+                    <div class="tab-content__box">
+                        <img src="img/theme/design-img.png" class="tab-content__icon"  alt="icon" />
+                        <p>
+                            We are a fairly small, flexible design studio that designs for
+                            print and web. We work flexibly with clients to fulfil their design needs.
+                            Whether you need to create a brand from scratch, including marketing
+                            materials.
+                        </p>
+                    </div>
+                </div><!-- tab-content -->
+
+                <div id="tab2" class="tab-content hide">
+                    <img src="img/theme/design-img.png" class="tab-content__icon"  alt="icon" />
                     <p>
                         We are a fairly small, flexible design studio that designs for
                         print and web. We work flexibly with clients to fulfil their design needs.
                         Whether you need to create a brand from scratch, including marketing
                         materials.
                     </p>
-                    <img src="img/icon.png" alt="icon" />
+                    <img src="img/theme/design-img.png" class="tab-content__icon"  alt="icon" />
                     <p>
                         We are a fairly small, flexible design studio that designs for
                         print and web. We work flexibly with clients to fulfil their design needs.
                         Whether you need to create a brand from scratch, including marketing
                         materials.
                     </p>
-                    <img src="img/icon.png" alt="icon" />
+                    <img src="img/theme/design-img.png" class="tab-content__icon"  alt="icon" />
                     <p>
                         We are a fairly small, flexible design studio that designs for
                         print and web. We work flexibly with clients to fulfil their design needs.
                         Whether you need to create a brand from scratch, including marketing
                         materials.
                     </p>
-                    <img src="img/icon.png" alt="icon" />
+                    <img src="img/theme/design-img.png" class="tab-content__icon"  alt="icon" />
                     <p>
                         We are a fairly small, flexible design studio that designs for
                         print and web. We work flexibly with clients to fulfil their design needs.
@@ -302,60 +350,29 @@
                     </p>
                 </div><!-- tab-content -->
 
-                <div id="tab2" class="tab-content">
-                    <img src="img/icon.png" alt="icon" />
+                <div id="tab3" class="tab-content hide">
+                    <img src="img/theme/design-img.png" class="tab-content__icon"  alt="icon" />
                     <p>
                         We are a fairly small, flexible design studio that designs for
                         print and web. We work flexibly with clients to fulfil their design needs.
                         Whether you need to create a brand from scratch, including marketing
                         materials.
                     </p>
-                    <img src="img/icon.png" alt="icon" />
+                    <img src="img/theme/design-img.png" class="tab-content__icon"  alt="icon" />
                     <p>
                         We are a fairly small, flexible design studio that designs for
                         print and web. We work flexibly with clients to fulfil their design needs.
                         Whether you need to create a brand from scratch, including marketing
                         materials.
                     </p>
-                    <img src="img/icon.png" alt="icon" />
+                    <img src="img/theme/design-img.png" class="tab-content__icon"  alt="icon" />
                     <p>
                         We are a fairly small, flexible design studio that designs for
                         print and web. We work flexibly with clients to fulfil their design needs.
                         Whether you need to create a brand from scratch, including marketing
                         materials.
                     </p>
-                    <img src="img/icon.png" alt="icon" />
-                    <p>
-                        We are a fairly small, flexible design studio that designs for
-                        print and web. We work flexibly with clients to fulfil their design needs.
-                        Whether you need to create a brand from scratch, including marketing
-                        materials.
-                    </p>
-                </div><!-- tab-content -->
-
-                <div id="tab3" class="tab-content">
-                    <img src="img/icon.png" alt="icon" />
-                    <p>
-                        We are a fairly small, flexible design studio that designs for
-                        print and web. We work flexibly with clients to fulfil their design needs.
-                        Whether you need to create a brand from scratch, including marketing
-                        materials.
-                    </p>
-                    <img src="img/icon.png" alt="icon" />
-                    <p>
-                        We are a fairly small, flexible design studio that designs for
-                        print and web. We work flexibly with clients to fulfil their design needs.
-                        Whether you need to create a brand from scratch, including marketing
-                        materials.
-                    </p>
-                    <img src="img/icon.png" alt="icon" />
-                    <p>
-                        We are a fairly small, flexible design studio that designs for
-                        print and web. We work flexibly with clients to fulfil their design needs.
-                        Whether you need to create a brand from scratch, including marketing
-                        materials.
-                    </p>
-                    <img src="img/icon.png" alt="icon" />
+                    <img src="img/theme/design-img.png" class="tab-content__icon"  alt="icon" />
                     <p>
                         We are a fairly small, flexible design studio that designs for
                         print and web. We work flexibly with clients to fulfil their design needs.
@@ -368,19 +385,19 @@
 
         <section class="clients">
             <div class="client">
-                <img src="img/netbeansIcon.png" alt="logo" class="assort-logo" />
+                <img src="img/NB-Platform-logo.png" alt="logo" class="assort-logo" />
             </div>
             <div class="client">
-                <img src="img/netbeansIcon.png" alt="logo" class="assort-logo" />
+                <img src="img/krita-logo.png" alt="logo" class="assort-logo" />
             </div>
             <div class="client">
-                <img src="img/netbeansIcon.png" alt="logo" class="assort-logo" />
+                <img src="img/scirra-logo-01.png" alt="logo" class="assort-logo" />
             </div>
             <div class="client">
-                <img src="img/netbeansIcon.png" alt="logo" class="assort-logo" />
+                <img src="img/blender-logo.png" alt="logo" class="assort-logo" />
             </div>
             <div class="client">
-                <img src="img/netbeansIcon.png" alt="logo" class="assort-logo" />
+                <img src="img/inkscape-logo.png" alt="logo" class="assort-logo" />
             </div>
         </section><!-- clients -->
         </div>
