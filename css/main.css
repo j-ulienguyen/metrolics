@@ -55,12 +55,6 @@ body {
     line-height: 1.5;
 }
 
-.accordion__heading {
-    font-size: 1em;
-    font-weight: 500;
-    color: white;
-}
-
 .post__heading {
     font-size: 1.25em;
     font-weight: 400;
@@ -87,6 +81,31 @@ body {
 
 .day--big {
     font-size: 1.75em;
+}
+
+.accordion__heading {
+    font-size: 1em;
+    font-weight: 500;
+    color: rgb(56, 56, 56);
+}
+
+.accordion__heading--active {
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+}
+
+.feature__heading {
+    font-weight: 600;
+    color: rgb(56, 56, 56);
+    margin-bottom: 0.5em;
+}
+
+.feature__description {
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 1.5;
+    color:rgb(94, 94, 94);
 }
 
 .page-footer--white {
@@ -436,8 +455,28 @@ body {
 
     padding: 1em;
     padding-left: 1.5em;
+    background-color: rgb(228, 228, 228);
+}
+
+.accordions__menu--active {
     background-color: rgb(56, 187, 231);
 }
+
+.accordion__icon {
+    width: 10%;
+    max-width: 10%;
+
+    float: left;
+    margin-right: 1em;
+}
+
+.accordions dl {
+    border: 1px solid rgb(228, 228, 228);
+    background-color: rgb(250, 250, 250);
+
+    padding: 2em 1em;
+}
+
 
 /****************************************** 
                 MEDIA QUERIES
