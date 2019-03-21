@@ -150,14 +150,17 @@ body {
     background-image: url('../img/theme/bg_page_footer.png');
     background-position: right bottom;
     background-repeat: no-repeat;
+}
 
+.serices-header {
+    grid-area: service-header;
 }
 
 .services {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 1.5em;
-
+    
     margin-bottom: 4em;
 }
 
